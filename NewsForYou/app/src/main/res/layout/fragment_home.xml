@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/marginx4"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:padding="@dimen/marginx4">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
+        android:id="@+id/iv_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/default_avatar"
@@ -21,58 +21,33 @@
         android:id="@+id/tv_welcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:maxLines="1"
         android:textColor="@color/dark_blue"
         android:textSize="@dimen/text_large"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_avatar"
         app:layout_constraintEnd_toStartOf="@+id/ib_menu_hamburger"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_avatar" />
 
     <ImageButton
         android:id="@+id/ib_menu_hamburger"
         android:layout_width="wrap_content"
-        android:padding="@dimen/margin"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:src="@drawable/menu_hamburger"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_image" />
-
-    <EditText
-        android:id="@+id/edt_search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:padding="@dimen/margin"
-        android:paddingStart="@dimen/marginx3"
-        android:paddingEnd="43dp"
-        android:background="@drawable/search_edt_custom_layout"
-        android:hint="@string/search_hint"
-        android:inputType="text"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"
-        android:textSize="@dimen/text_medium"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/menu_hamburger"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_avatar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
-        app:layout_constraintVertical_bias="0.055"/>
+        app:layout_constraintTop_toTopOf="@+id/iv_avatar" />
 
-    <ImageView
-        android:id="@+id/btn_search"
-        android:layout_margin="5dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/search"
-        android:scaleType="centerCrop"
-        app:tint="@color/dark_blue"
-        app:layout_constraintBottom_toBottomOf="@+id/edt_search"
-        app:layout_constraintEnd_toEndOf="@+id/edt_search"
-        app:layout_constraintTop_toTopOf="@+id/edt_search" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

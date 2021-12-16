@@ -38,6 +38,9 @@
             android:name="com.example.newsforyou.SignInActivity"
             android:exported="true" />
         <activity
+            android:name="com.example.newsforyou.ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.newsforyou.SplashActivity"
             android:exported="true"
             android:noHistory="true" >

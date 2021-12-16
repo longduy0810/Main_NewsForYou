@@ -2142,6 +2142,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id guideline2
 id header_title
 id hideable
 id home
@@ -2167,6 +2168,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_avatar
 id iv_background
 id jumpToEnd
 id jumpToStart
@@ -2274,7 +2276,6 @@ id percent
 id pin
 id position
 id postLayout
-id profile_image
 id progress_circular
 id progress_horizontal
 id radio

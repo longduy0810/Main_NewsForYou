@@ -6,10 +6,11 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Looper;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
-import android.widget.Toast;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.example.newsforyou.Class.MainViewPagerAdapter;
 import com.example.newsforyou.Class.ZoomOutPageTransformer;
@@ -54,6 +55,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void initListener() {
+
         mBottomNavigationView.setOnItemSelectedListener(
                 new NavigationBarView.OnItemSelectedListener() {
                     @Override
