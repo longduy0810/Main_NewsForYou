@@ -7,6 +7,10 @@ public class View {
     List<Integer> newsId;
     List<Integer> userId;
 
+    public View() {
+
+    }
+
     public View(int id, List<Integer> newsId, List<Integer> userId) {
         this.id = id;
         this.newsId = newsId;

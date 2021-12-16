@@ -11,6 +11,10 @@ public class Comment {
     List<Integer> replyId;
     List<Integer> userId;
 
+    public Comment() {
+
+    }
+
     public Comment(int id, String content, LocalDateTime createTime, LocalDateTime lastUpdateTime, List<Integer> replyId, List<Integer> userId) {
         this.id = id;
         this.content = content;

@@ -13,14 +13,22 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.newsforyou.Class.MainViewPagerAdapter;
+import com.example.newsforyou.Class.News;
+import com.example.newsforyou.Class.User;
 import com.example.newsforyou.Class.ZoomOutPageTransformer;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public class DashboardActivity extends AppCompatActivity {
     private long Timeback;
+    private DatabaseReference newsDatabase;
 
     private ViewPager2 mViewPager;
     private BottomNavigationView mBottomNavigationView;
@@ -34,6 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         initUI();
         initListener();
+        initNews();
         showUserInformation();
     }
 
@@ -119,5 +128,13 @@ public class DashboardActivity extends AppCompatActivity {
         }
 
         String email = user.getEmail();
+    }
+
+    private void initNews() {
+        newsDatabase = FirebaseDatabase.getInstance().getReference();
+
+        Date time = new Date(2021, 10, 8, 15, 0, 0);
+        News news = new News(1, "Title test 1", "This is a test content.", "Long", time);
+        newsDatabase.child("User").push().setValue(news);
     }
 }

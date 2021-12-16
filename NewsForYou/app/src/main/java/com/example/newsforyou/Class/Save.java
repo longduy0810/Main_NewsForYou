@@ -8,6 +8,10 @@ public class Save {
     List<Integer> newsId;
     List<Integer> userId;
 
+    public Save() {
+
+    }
+
     public Save(int id, List<Integer> newsId, List<Integer> userId) {
         this.id = id;
         this.newsId = newsId;

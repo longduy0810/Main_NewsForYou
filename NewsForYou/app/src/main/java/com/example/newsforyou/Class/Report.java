@@ -9,6 +9,10 @@ public class Report {
     List<Integer> newsId;
     List<Integer> userId;
 
+    public Report() {
+
+    }
+
     public Report(int id, String content, List<Integer> newsId, List<Integer> userId) {
         this.id = id;
         this.content = content;

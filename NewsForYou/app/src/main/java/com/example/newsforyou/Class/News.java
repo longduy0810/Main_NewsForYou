@@ -1,27 +1,32 @@
 package com.example.newsforyou.Class;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class News {
     int id;
     String title;
     String content;
     String author;
-    int commentId;
+    /*int commentId;
     int reportCount;
     int viewCount;
-    int likeCount;
-    LocalDateTime dateTime;
+    int likeCount;*/
+    Date dateTime;
 
-    public News(int id, String title, String content, String author, int commentId, int reportCount, int viewCount, int likeCount, LocalDateTime dateTime) {
+    public News() {
+
+    }
+
+    public News(int id, String title, String content, String author, Date dateTime) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.author = author;
-        this.commentId = commentId;
+        /*this.commentId = commentId;
         this.reportCount = reportCount;
         this.viewCount = viewCount;
-        this.likeCount = likeCount;
+        this.likeCount = likeCount;*/
         this.dateTime = dateTime;
     }
 
@@ -57,7 +62,7 @@ public class News {
         this.author = author;
     }
 
-    public int getCommentId() {
+    /*public int getCommentId() {
         return commentId;
     }
 
@@ -87,13 +92,13 @@ public class News {
 
     public void setLikeCount(int likeCount) {
         this.likeCount = likeCount;
-    }
+    }*/
 
-    public LocalDateTime getDateTime() {
+    public Date getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
+    public void setDateTime(Date dateTime) {
         this.dateTime = dateTime;
     }
 }

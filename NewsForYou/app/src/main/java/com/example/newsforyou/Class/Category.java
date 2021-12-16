@@ -8,6 +8,10 @@ public class Category {
     String name;
     List<Integer> newsId;
 
+    public Category() {
+
+    }
+
     public Category(int id, String name, List<Integer> newsId) {
         this.id = id;
         this.name = name;

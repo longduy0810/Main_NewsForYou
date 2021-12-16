@@ -9,6 +9,10 @@ public class History {
     List<Integer> newsId;
     List<Integer> userId;
 
+    public History() {
+
+    }
+
     public History(int id, LocalDateTime dateTime, List<Integer> newsId, List<Integer> userId) {
         this.id = id;
         this.dateTime = dateTime;

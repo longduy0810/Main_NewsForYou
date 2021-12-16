@@ -7,6 +7,10 @@ public class Like {
     List<Integer> newsId;
     List<Integer> userId;
 
+    public Like() {
+
+    }
+
     public Like(int id, List<Integer> newsId, List<Integer> userId) {
         this.id = id;
         this.newsId = newsId;
