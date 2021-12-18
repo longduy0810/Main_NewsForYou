@@ -2408,6 +2408,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_author
 id tv_dont_have_account
 id tv_have_account
 id tv_ooops
@@ -2416,6 +2417,7 @@ id tv_recently
 id tv_save
 id tv_search
 id tv_suggest
+id tv_title
 id tv_to_forgot_password
 id tv_to_sign_in
 id tv_to_sign_up
@@ -2541,6 +2543,7 @@ layout fragment_home
 layout fragment_save
 layout fragment_search
 layout fragment_setting
+layout item_news
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

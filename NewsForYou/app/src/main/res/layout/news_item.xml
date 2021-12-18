@@ -75,7 +75,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toBottomOf="@+id/tV7" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton4"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="24dp"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tV7"
         app:srcCompat="@drawable/eye_open" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton7"
         android:layout_width="20dp"
         android:layout_height="20dp"
@@ -106,7 +106,7 @@
         app:layout_constraintStart_toEndOf="@+id/tV8"
         app:layout_constraintTop_toBottomOf="@+id/tV7" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton8"
         android:layout_width="24dp"
         android:layout_height="24dp"
