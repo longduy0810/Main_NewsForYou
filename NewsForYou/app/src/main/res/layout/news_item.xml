@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/iV"
+        android:id="@+id/iv_avatar_news_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -16,7 +16,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tV6"
+        android:id="@+id/tv_title_news_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -25,22 +25,22 @@
         android:textColor="@color/dark_blue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/iV"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar_news_item"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tV7"
+        android:id="@+id/tv_date_news_item"
         android:layout_width="101dp"
         android:layout_height="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Vào ngày abc..."
         android:textColor="@color/dark_blue"
-        app:layout_constraintStart_toEndOf="@+id/iV"
-        app:layout_constraintTop_toBottomOf="@+id/tV6" />
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar_news_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_news_item" />
 
     <TextView
-        android:id="@+id/tV8"
+        android:id="@+id/tv_view_news_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -49,10 +49,10 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton7"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/tV7" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <TextView
-        android:id="@+id/tV9"
+        android:id="@+id/tv_like_news_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -61,10 +61,10 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/tV7" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <TextView
-        android:id="@+id/tV10"
+        android:id="@+id/tv_comment_news_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/tV7" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <ImageView
         android:id="@+id/imageButton4"
@@ -90,9 +90,9 @@
         android:tintMode="add"
         android:verticalScrollbarPosition="defaultPosition"
         android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/tV8"
-        app:layout_constraintStart_toEndOf="@+id/iV"
-        app:layout_constraintTop_toBottomOf="@+id/tV7"
+        app:layout_constraintEnd_toStartOf="@+id/tv_view_news_item"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar_news_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item"
         app:srcCompat="@drawable/eye_open" />
 
     <ImageView
@@ -101,10 +101,10 @@
         android:layout_height="20dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/heart_outline"
-        app:layout_constraintEnd_toStartOf="@+id/tV9"
+        app:layout_constraintEnd_toStartOf="@+id/tv_like_news_item"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tV8"
-        app:layout_constraintTop_toBottomOf="@+id/tV7" />
+        app:layout_constraintStart_toEndOf="@+id/tv_view_news_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <ImageView
         android:id="@+id/imageButton8"
@@ -112,9 +112,9 @@
         android:layout_height="24dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/comment"
-        app:layout_constraintEnd_toStartOf="@+id/tV10"
+        app:layout_constraintEnd_toStartOf="@+id/tv_comment_news_item"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tV9"
-        app:layout_constraintTop_toBottomOf="@+id/tV7" />
+        app:layout_constraintStart_toEndOf="@+id/tv_like_news_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

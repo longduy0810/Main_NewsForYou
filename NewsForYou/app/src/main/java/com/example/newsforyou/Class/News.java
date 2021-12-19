@@ -8,26 +8,26 @@ public class News {
     String title;
     String content;
     String author;
-    /*int commentId;
+    int commentCount;
     int reportCount;
     int viewCount;
-    int likeCount;*/
-    Date dateTime;
+    int likeCount;
+    Date date;
 
     public News() {
 
     }
 
-    public News(int id, String title, String content, String author, Date dateTime) {
+    public News(int id, String title, String content, String author, Date date) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.author = author;
-        /*this.commentId = commentId;
-        this.reportCount = reportCount;
-        this.viewCount = viewCount;
-        this.likeCount = likeCount;*/
-        this.dateTime = dateTime;
+        this.commentCount = 0;
+        this.reportCount = 0;
+        this.viewCount = 0;
+        this.likeCount = 0;
+        this.date = date;
     }
 
     public int getId() {
@@ -62,12 +62,12 @@ public class News {
         this.author = author;
     }
 
-    /*public int getCommentId() {
-        return commentId;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setCommentId(int commentId) {
-        this.commentId = commentId;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
     }
 
     public int getReportCount() {
@@ -92,13 +92,13 @@ public class News {
 
     public void setLikeCount(int likeCount) {
         this.likeCount = likeCount;
-    }*/
-
-    public Date getDateTime() {
-        return dateTime;
     }
 
-    public void setDateTime(Date dateTime) {
-        this.dateTime = dateTime;
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }
