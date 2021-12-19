@@ -26,6 +26,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.NewsForYou" >
         <activity
+            android:name="com.example.newsforyou.NewsDetailsActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.newsforyou.ForgotPasswordActivity"
             android:exported="true" />
         <activity

@@ -2413,6 +2413,7 @@ id tv_date_news_item
 id tv_dont_have_account
 id tv_have_account
 id tv_like_news_item
+id tv_news_detail
 id tv_ooops
 id tv_profile
 id tv_recently
@@ -2521,6 +2522,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
 layout activity_forgot_password
+layout activity_news_details
 layout activity_profile
 layout activity_sign_in
 layout activity_sign_up

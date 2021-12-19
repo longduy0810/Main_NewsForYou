@@ -2412,6 +2412,7 @@ int id tv_date_news_item 0x7f0801f2
 int id tv_dont_have_account 0x7f0801f3
 int id tv_have_account 0x7f0801f4
 int id tv_like_news_item 0x7f0801f5
+int id tv_news_detail 0x7f08021f
 int id tv_ooops 0x7f0801f6
 int id tv_profile 0x7f0801f7
 int id tv_recently 0x7f0801f8
@@ -2520,6 +2521,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_dashboard 0x7f0b001c
 int layout activity_forgot_password 0x7f0b001d
+int layout activity_news_details 0x7f0b0087
 int layout activity_profile 0x7f0b001e
 int layout activity_sign_in 0x7f0b001f
 int layout activity_sign_up 0x7f0b0020

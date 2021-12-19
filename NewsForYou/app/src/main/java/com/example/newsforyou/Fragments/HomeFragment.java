@@ -61,9 +61,7 @@ public class HomeFragment extends Fragment {
                             newsList.add(news);
                         }
                         lv_news.setAdapter(mAdapter);
-                        for (int i =0; i < newsList.size(); i++){
-                            System.out.println(newsList.get(i));
-                        }
+
 
                     }
                     @Override
