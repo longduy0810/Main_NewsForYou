@@ -2188,6 +2188,7 @@ id linear
 id listMode
 id list_item
 id lv_news
+id lv_news_search
 id masked
 id match_constraint
 id match_parent
@@ -2434,6 +2435,7 @@ id up
 id useLogo
 id vertical_only
 id view
+id view2
 id view_offset_helper
 id view_pager
 id view_transition

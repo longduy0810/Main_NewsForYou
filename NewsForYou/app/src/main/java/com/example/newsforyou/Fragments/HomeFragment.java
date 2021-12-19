@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<News> newsList;
     private ListView lv_news;
     private NewsAdapter mAdapter;
-    private RecyclerView recyclerView;
+
 
     private static final String TAG = HomeFragment.class.getName();
     private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("News");

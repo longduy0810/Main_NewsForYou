@@ -47,7 +47,10 @@ public class ProfileActivity extends AppCompatActivity {
         btnSave = (Button) findViewById(R.id.btn_save_change);
         btnChangePassword = (Button) findViewById(R.id.btn_change_password);
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
     private void initListener() {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,8 +79,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ProfileActivity.this, HomeFragment.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
     }
