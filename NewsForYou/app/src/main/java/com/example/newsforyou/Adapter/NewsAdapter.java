@@ -21,6 +21,7 @@ import com.bumptech.glide.signature.ObjectKey;
 import com.example.newsforyou.Class.News;
 import com.example.newsforyou.Fragments.HomeFragment;
 import com.example.newsforyou.R;
+import com.github.javafaker.Faker;
 
 import java.util.List;
 
@@ -56,6 +57,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
         tvView.setText(Integer.toString(currentNews.getViewCount()));
         tvLike.setText(Integer.toString(currentNews.getLikeCount()));
         tvComment.setText(Integer.toString(currentNews.getCommentCount()));
+
         Glide.with(mContext)
                 .load("https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_News_icon.svg/939px-Google_News_icon.svg.png")
                 .signature(new ObjectKey("https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_News_icon.svg/939px-Google_News_icon.svg.png"))
