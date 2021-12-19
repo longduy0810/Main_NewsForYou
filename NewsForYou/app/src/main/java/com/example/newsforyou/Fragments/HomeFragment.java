@@ -22,6 +22,8 @@ import com.example.newsforyou.Class.News;
 import com.example.newsforyou.DashboardActivity;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
+import com.example.newsforyou.Repository.NewsRepository;
+import com.example.newsforyou.Repository.NewsRepositoryImpl;
 import com.example.newsforyou.Utils.EmptyRecyclerView;
 
 import java.util.ArrayList;
@@ -33,16 +35,21 @@ public class HomeFragment extends Fragment {
     private View mView;
     private ImageView ivProfile;
     private ArrayList<News> newsList;
-
+    private RecyclerView rv_news;
     private NewsAdapter mAdapter;
     private RecyclerView recyclerView;
-
+    private NewsRepository newsRepository = new NewsRepositoryImpl();
     private static final String LOG_TAG = HomeFragment.class.getName();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_home, container, false);
+        newsList = (ArrayList<News>) newsRepository.findAll();
+        rv_news = mView.findViewById(R.id.rv_news);
+
+        mAdapter = new NewsAdapter(mView.getContext(),newsList);
+        rv_news.setAdapter(mAdapter);
 
         ivProfile = (ImageView) mView.findViewById(R.id.iv_avatar);
         ivProfile.setOnClickListener(new View.OnClickListener() {

@@ -39,7 +39,6 @@ public class DashboardActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dashboard);
-
         initUI();
         initListener();
         initNews();
@@ -132,9 +131,8 @@ public class DashboardActivity extends AppCompatActivity {
 
     private void initNews() {
         newsDatabase = FirebaseDatabase.getInstance().getReference();
-
         Date time = new Date(2021, 10, 8, 15, 0, 0);
         News news = new News(1, "Title test 1", "This is a test content.", "Long", time);
-        newsDatabase.child("User").push().setValue(news);
+        newsDatabase.child("News").push().setValue(news);
     }
 }

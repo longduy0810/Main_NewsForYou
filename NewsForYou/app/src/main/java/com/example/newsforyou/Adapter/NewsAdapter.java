@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.newsforyou.Class.News;
+import com.example.newsforyou.Fragments.HomeFragment;
 import com.example.newsforyou.R;
 
 import java.util.List;
@@ -65,7 +66,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
         ViewHolder(View itemView) {
             super(itemView);
-
             ivAvatar = itemView.findViewById(R.id.iv_avatar_news_item);
             tvTitle = itemView.findViewById(R.id.tv_title_news_item);
             tvDate = itemView.findViewById(R.id.tv_date_news_item);
