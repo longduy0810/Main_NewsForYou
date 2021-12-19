@@ -101,4 +101,19 @@ public class News {
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "News{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", author='" + author + '\'' +
+                ", commentCount=" + commentCount +
+                ", reportCount=" + reportCount +
+                ", viewCount=" + viewCount +
+                ", likeCount=" + likeCount +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }

@@ -2136,6 +2136,7 @@ id fragment_container_view_tag
 id frost
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2186,6 +2187,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lv_news
 id masked
 id match_constraint
 id match_parent
@@ -2291,7 +2293,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id rv_news
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

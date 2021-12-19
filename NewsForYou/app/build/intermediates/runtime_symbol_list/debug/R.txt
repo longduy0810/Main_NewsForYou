@@ -2135,6 +2135,7 @@ int id fragment_container_view_tag 0x7f0800de
 int id frost 0x7f0800df
 int id ghost_view 0x7f0800e0
 int id ghost_view_holder 0x7f0800e1
+int id glide_custom_view_target_tag 0x7f08021d
 int id gone 0x7f0800e2
 int id graph 0x7f0800e3
 int id graph_wrap 0x7f0800e4
@@ -2185,6 +2186,7 @@ int id line3 0x7f080110
 int id linear 0x7f080111
 int id listMode 0x7f080112
 int id list_item 0x7f080113
+int id lv_news 0x7f08021c
 int id masked 0x7f080114
 int id match_constraint 0x7f080115
 int id match_parent 0x7f080116
@@ -2290,7 +2292,6 @@ int id right_icon 0x7f080179
 int id right_side 0x7f08017a
 int id rounded 0x7f08017b
 int id row_index_key 0x7f08017c
-int id rv_news 0x7f08017d
 int id save_non_transition_alpha 0x7f08017e
 int id save_overlay_view 0x7f08017f
 int id sawtooth 0x7f080180
