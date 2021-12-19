@@ -46,9 +46,9 @@
         android:layout_marginTop="48dp"
         android:text="8563"
         android:textColor="@color/dark_blue"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintEnd_toStartOf="@+id/iv_like_news_item"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_news_item"
         app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <TextView
@@ -58,9 +58,9 @@
         android:layout_marginTop="48dp"
         android:text="6473"
         android:textColor="@color/dark_blue"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+        app:layout_constraintEnd_toStartOf="@+id/iv_comment_news_item"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/iv_like_news_item"
         app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <TextView
@@ -72,11 +72,11 @@
         android:textColor="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/iv_comment_news_item"
         app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <ImageView
-        android:id="@+id/imageButton4"
+        android:id="@+id/iv_view_news_item"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -96,7 +96,7 @@
         app:srcCompat="@drawable/eye_open" />
 
     <ImageView
-        android:id="@+id/imageButton7"
+        android:id="@+id/iv_like_news_item"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginTop="48dp"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_date_news_item" />
 
     <ImageView
-        android:id="@+id/imageButton8"
+        android:id="@+id/iv_comment_news_item"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="48dp"

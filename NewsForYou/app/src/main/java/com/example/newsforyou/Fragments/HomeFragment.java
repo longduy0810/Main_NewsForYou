@@ -2,23 +2,42 @@ package com.example.newsforyou.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.newsforyou.Adapter.NewsAdapter;
+import com.example.newsforyou.Class.News;
 import com.example.newsforyou.DashboardActivity;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
+import com.example.newsforyou.Utils.EmptyRecyclerView;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
     private View mView;
     private ImageView ivProfile;
+    private ArrayList<News> newsList;
+
+    private NewsAdapter mAdapter;
+    private RecyclerView recyclerView;
+
+    private static final String LOG_TAG = HomeFragment.class.getName();
 
     @Nullable
     @Override
@@ -34,6 +53,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        return  mView;
+        return mView;
     }
 }

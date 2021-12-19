@@ -59,6 +59,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         private TextView tvView;
         private TextView tvLike;
         private TextView tvComment;
+        private ImageView ivView;
+        private ImageView ivLike;
+        private ImageView ivComment;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -69,6 +72,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             tvView = itemView.findViewById(R.id.tv_view_news_item);
             tvLike = itemView.findViewById(R.id.tv_like_news_item);
             tvComment = itemView.findViewById(R.id.tv_comment_news_item);
+            ivView = itemView.findViewById(R.id.iv_view_news_item);
+            ivLike = itemView.findViewById(R.id.iv_like_news_item);
+            ivComment = itemView.findViewById(R.id.iv_comment_news_item);
         }
     }
 }

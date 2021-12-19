@@ -1,8 +1,5 @@
-com/example/newsforyou/ProfileActivity.java
- com.example.newsforyou.ProfileActivity
- com.example.newsforyou.ProfileActivity$1
- com.example.newsforyou.ProfileActivity$2
- com.example.newsforyou.ProfileActivity$3
+com/example/newsforyou/Class/User.java
+ com.example.newsforyou.Class.User
 com/example/newsforyou/Fragments/SearchFragment.java
  com.example.newsforyou.Fragments.SearchFragment
 com/example/newsforyou/Class/View.java
@@ -28,8 +25,8 @@ com/example/newsforyou/ForgotPasswordActivity.java
  com.example.newsforyou.ForgotPasswordActivity$3
 com/example/newsforyou/Fragments/SaveFragment.java
  com.example.newsforyou.Fragments.SaveFragment
-com/example/newsforyou/Class/MainViewPagerAdapter.java
- com.example.newsforyou.Class.MainViewPagerAdapter
+com/example/newsforyou/Fragments/SettingFragment.java
+ com.example.newsforyou.Fragments.SettingFragment
 com/example/newsforyou/SignInActivity.java
  com.example.newsforyou.SignInActivity
  com.example.newsforyou.SignInActivity$1
@@ -38,6 +35,9 @@ com/example/newsforyou/SignInActivity.java
  com.example.newsforyou.SignInActivity$4
 com/example/newsforyou/BuildConfig.java
  com.example.newsforyou.BuildConfig
+com/example/newsforyou/Adapter/NewsAdapter.java
+ com.example.newsforyou.Adapter.NewsAdapter
+ com.example.newsforyou.Adapter.NewsAdapter$ViewHolder
 com/example/newsforyou/Class/History.java
  com.example.newsforyou.Class.History
 com/example/newsforyou/Class/CheckValid.java
@@ -56,10 +56,16 @@ com/example/newsforyou/SplashActivity.java
  com.example.newsforyou.SplashActivity$2
 com/example/newsforyou/Class/ZoomOutPageTransformer.java
  com.example.newsforyou.Class.ZoomOutPageTransformer
-com/example/newsforyou/Fragments/SettingFragment.java
- com.example.newsforyou.Fragments.SettingFragment
+com/example/newsforyou/Utils/EmptyRecyclerView.java
+ com.example.newsforyou.Utils.EmptyRecyclerView
+ com.example.newsforyou.Utils.EmptyRecyclerView$1
+com/example/newsforyou/ProfileActivity.java
+ com.example.newsforyou.ProfileActivity
+ com.example.newsforyou.ProfileActivity$1
+ com.example.newsforyou.ProfileActivity$2
+ com.example.newsforyou.ProfileActivity$3
+com/example/newsforyou/Class/MainViewPagerAdapter.java
+ com.example.newsforyou.Class.MainViewPagerAdapter
 com/example/newsforyou/Fragments/HomeFragment.java
  com.example.newsforyou.Fragments.HomeFragment
  com.example.newsforyou.Fragments.HomeFragment$1
-com/example/newsforyou/Class/User.java
- com.example.newsforyou.Class.User
