@@ -46,6 +46,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_home, container, false);
         newsList = (ArrayList<News>) newsRepository.findAll();
+
         rv_news = mView.findViewById(R.id.rv_news);
 
         mAdapter = new NewsAdapter(mView.getContext(),newsList);

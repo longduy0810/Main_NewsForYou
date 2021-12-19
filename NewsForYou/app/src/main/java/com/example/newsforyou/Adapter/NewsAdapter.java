@@ -37,9 +37,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-
         final News currentNews = mNewsList.get(position);
-
         holder.tvTitle.setText(currentNews.getTitle());
         holder.tvDate.setText(currentNews.getDate().toString());
         holder.tvView.setText(currentNews.getViewCount());

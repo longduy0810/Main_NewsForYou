@@ -12,13 +12,13 @@ public class News {
     int reportCount;
     int viewCount;
     int likeCount;
-    Date date;
+    String date;
 
     public News() {
-
+        date = new Date().toString();
     }
 
-    public News(int id, String title, String content, String author, Date date) {
+    public News(int id, String title, String content, String author,String date) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -94,11 +94,11 @@ public class News {
         this.likeCount = likeCount;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }
