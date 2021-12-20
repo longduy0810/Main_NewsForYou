@@ -41,7 +41,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.news_item, parent, false);
         }
         ImageView ivAvatar =  convertView.findViewById(R.id.iv_avatar_news_item);
-        TextView tvTitle =convertView.findViewById(R.id.tv_title_news_item);
+        TextView tvTitle =convertView.findViewById(R.id.tv_view_setting);
         TextView tvDate = convertView.findViewById(R.id.tv_date_news_item);
         TextView tvView = convertView.findViewById(R.id.tv_view_news_item);
         TextView tvLike = convertView.findViewById(R.id.tv_like_news_item);

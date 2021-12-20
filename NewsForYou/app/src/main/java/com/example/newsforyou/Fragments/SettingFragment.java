@@ -18,6 +18,7 @@ public class SettingFragment extends Fragment {
 
     private View mView;
     private ImageView ivProfile;
+    private
 
     @Nullable
     @Override
@@ -32,5 +33,9 @@ public class SettingFragment extends Fragment {
             }
         });
         return  mView;
+    }
+
+    public void initUI() {
+
     }
 }
