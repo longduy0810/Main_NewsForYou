@@ -13,10 +13,12 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\longb\.gradle\cach
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\longb\.gradle\caches\transforms-3\4a5bd81f2d39381151216137588893e3\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\longb\.gradle\caches\transforms-3\e1ed62011703249d03c4615e890f5a7f\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:15:1-39:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\cc0c490645cb5c8ef7069804dff9c2ae\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\longb\.gradle\caches\transforms-3\1c91f05893422f25d419c123e5c6fe88\transformed\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\longb\.gradle\caches\transforms-3\d244694a7cf60b68f6360e6d4d149cbd\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\longb\.gradle\caches\transforms-3\d39720dfd11c84abbb1765362ab7e280\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.0] C:\Users\longb\.gradle\caches\transforms-3\9a37503f4125aeb8aff9eebad867370d\transformed\jetified-firebase-database-collection-18.0.0\AndroidManifest.xml:2:1-9:12
@@ -38,7 +40,6 @@ MERGED from [androidx.media:media:1.0.0] C:\Users\longb\.gradle\caches\transform
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\d7d271375ded6eff316edd27ceb0072d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\f0e1dca14b5ed3fe159b41cdf0cbf790\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\21aff1fa3790b705ad8e19b1c47e0d56\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\fbf631149de996a78c67c939d36f7655\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\cd32edd474bb2a02875747f09057a6e3\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\634062af7ba6565b6ce63935447f68fe\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -128,6 +129,8 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\longb\.gradle\caches\t
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\longb\.gradle\caches\transforms-3\e1ed62011703249d03c4615e890f5a7f\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:29:5-37:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\cc0c490645cb5c8ef7069804dff9c2ae\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\cc0c490645cb5c8ef7069804dff9c2ae\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\longb\.gradle\caches\transforms-3\1c91f05893422f25d419c123e5c6fe88\transformed\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:24:5-20
@@ -242,14 +245,18 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\longb\.gradle\caches\t
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\longb\.gradle\caches\transforms-3\e1ed62011703249d03c4615e890f5a7f\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\cc0c490645cb5c8ef7069804dff9c2ae\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\cc0c490645cb5c8ef7069804dff9c2ae\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\longb\.gradle\caches\transforms-3\1c91f05893422f25d419c123e5c6fe88\transformed\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\longb\.gradle\caches\transforms-3\1c91f05893422f25d419c123e5c6fe88\transformed\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\8fd6eea0562aea14f3bc71e06ead11c9\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\longb\.gradle\caches\transforms-3\d244694a7cf60b68f6360e6d4d149cbd\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\longb\.gradle\caches\transforms-3\d244694a7cf60b68f6360e6d4d149cbd\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\longb\.gradle\caches\transforms-3\d39720dfd11c84abbb1765362ab7e280\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
@@ -292,8 +299,6 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\longb\.gradle\caches\t
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\f0e1dca14b5ed3fe159b41cdf0cbf790\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\21aff1fa3790b705ad8e19b1c47e0d56\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\21aff1fa3790b705ad8e19b1c47e0d56\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\longb\.gradle\caches\transforms-3\52b8a03cfc4c20a0c9c78819018423c4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\fbf631149de996a78c67c939d36f7655\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\fbf631149de996a78c67c939d36f7655\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\longb\.gradle\caches\transforms-3\cd32edd474bb2a02875747f09057a6e3\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
@@ -448,6 +453,14 @@ ADDED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\
 		ADDED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\773b1eff15c8b6f77bc17bf53b62a785\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\longb\.gradle\caches\transforms-3\66acce8866d74a31e8f793a3322044b1\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\longb\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 	android:authorities

@@ -120,6 +120,10 @@
         </service>
 
         <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.newsforyou.com.squareup.picasso"
+            android:exported="false" />
+        <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.newsforyou.firebaseinitprovider"
             android:directBootAware="true"

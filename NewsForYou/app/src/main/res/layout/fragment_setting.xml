@@ -44,17 +44,17 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/setting_background_2" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_avatar_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_avatar"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:srcCompat="@drawable/default_avatar" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <ImageView
         android:id="@+id/iv_view_setting"

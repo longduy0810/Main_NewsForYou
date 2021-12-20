@@ -20,12 +20,12 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_round.xml.flat",
-        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\bg_round.xml"
-    },
-    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_white.png.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\button_white.png"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_round.xml.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\bg_round.xml"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_eye_open.png.flat",

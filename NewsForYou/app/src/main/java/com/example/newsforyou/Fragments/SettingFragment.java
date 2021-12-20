@@ -1,6 +1,7 @@
 package com.example.newsforyou.Fragments;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.LayoutInflater;
@@ -15,6 +16,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 public class SettingFragment extends Fragment {
 
@@ -37,10 +42,23 @@ public class SettingFragment extends Fragment {
     private TextView tvTextSize;
     private TextView tvLogout;
 
+    StorageReference storageReference;
+    StorageReference avatarRef;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_setting, container, false);
+
+        storageReference = FirebaseStorage.getInstance().getReference();
+
+        avatarRef = storageReference.child("avatar.jpg");
+        avatarRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(ivAvatar);
+            }
+        });
 
         initUI();
         initListener();

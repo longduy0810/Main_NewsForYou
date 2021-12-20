@@ -27,6 +27,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -46,6 +47,7 @@ public class ProfileActivity extends AppCompatActivity {
     private Button btnChangePassword;
 
     StorageReference storageReference;
+    StorageReference avatarRef;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +55,14 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         storageReference = FirebaseStorage.getInstance().getReference();
+
+        avatarRef = storageReference.child("avatar.jpg");
+        avatarRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(ivAvatar);
+            }
+        });
 
         initUI();
         initListener();
@@ -123,7 +133,7 @@ public class ProfileActivity extends AppCompatActivity {
                     Uri imageUri = data.getData();
                     final InputStream imageStream = getContentResolver().openInputStream(imageUri);
                     final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
-                    ivAvatar.setImageBitmap(selectedImage);
+                    // ivAvatar.setImageBitmap(selectedImage);
 
                     uploadImageToFirebase(imageUri);
                 } catch (FileNotFoundException e) {
@@ -139,7 +149,12 @@ public class ProfileActivity extends AppCompatActivity {
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(ProfileActivity.this, "Đã lưu", Toast.LENGTH_SHORT).show();
+                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        Picasso.get().load(uri).into(ivAvatar);
+                    }
+                });
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

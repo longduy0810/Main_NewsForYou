@@ -1,6 +1,7 @@
 package com.example.newsforyou.Fragments;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,11 +24,15 @@ import com.example.newsforyou.Class.News;
 import com.example.newsforyou.DashboardActivity;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -41,6 +46,8 @@ public class HomeFragment extends Fragment {
     private ListView lv_news;
     private NewsAdapter mAdapter;
 
+    StorageReference storageReference;
+    StorageReference avatarRef;
 
     private static final String TAG = HomeFragment.class.getName();
     private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("News");
@@ -70,6 +77,17 @@ public class HomeFragment extends Fragment {
                     }
                 }
         );
+
+        storageReference = FirebaseStorage.getInstance().getReference();
+
+        avatarRef = storageReference.child("avatar.jpg");
+        avatarRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(ivProfile);
+            }
+        });
+
         ivProfile = (ImageView) mView.findViewById(R.id.iv_avatar);
         ivProfile.setOnClickListener(new View.OnClickListener() {
             @Override
