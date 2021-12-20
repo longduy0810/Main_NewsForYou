@@ -23,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -32,6 +34,8 @@ import java.util.Random;
 public class DashboardActivity extends AppCompatActivity {
     private long Timeback;
     private DatabaseReference newsDatabase;
+    private StorageReference storageRef;
+    private FirebaseStorage storage;
 
     private ViewPager2 mViewPager;
     private BottomNavigationView mBottomNavigationView;

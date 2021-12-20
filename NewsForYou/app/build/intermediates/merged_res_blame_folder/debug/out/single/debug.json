@@ -24,8 +24,16 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\bg_round.xml"
     },
     {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_white.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\button_white.png"
+    },
+    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_eye_open.png.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\eye_open.png"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_setting_background_2.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\setting_background_2.png"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_no_internet_dialog.xml.flat",
@@ -36,12 +44,12 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile.xml.flat",
-        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\layout\\activity_profile.xml"
-    },
-    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile.xml.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_bottom_navigation.xml.flat",
@@ -68,12 +76,12 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\setting.png"
     },
     {
-        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_comment.png.flat",
@@ -156,6 +164,10 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\forgot_password.png"
     },
     {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_blue.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\button_blue.png"
+    },
+    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\home.png"
     },
@@ -192,7 +204,15 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\intro.png"
     },
     {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_text_size.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\text_size.png"
+    },
+    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_bottom_navigation_item_selected_background.xml.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\bottom_navigation_item_selected_background.xml"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_bell.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\bell.png"
     }
 ]
