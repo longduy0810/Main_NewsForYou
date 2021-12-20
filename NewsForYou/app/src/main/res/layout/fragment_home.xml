@@ -38,12 +38,12 @@
         android:textSize="@dimen/text_large"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/iv_avatar"
-        app:layout_constraintEnd_toStartOf="@+id/ib_menu_hamburger"
+        app:layout_constraintEnd_toStartOf="@+id/iv_setting_home"
         app:layout_constraintStart_toEndOf="@+id/iv_avatar"
         app:layout_constraintTop_toTopOf="@+id/iv_avatar" />
 
-    <ImageButton
-        android:id="@+id/ib_menu_hamburger"
+    <ImageView
+        android:id="@+id/iv_setting_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"

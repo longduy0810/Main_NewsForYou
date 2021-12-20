@@ -14,6 +14,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -45,6 +47,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<News> newsList;
     private ListView lv_news;
     private NewsAdapter mAdapter;
+    private ImageView ivSetting;
 
     StorageReference storageReference;
     StorageReference avatarRef;
@@ -94,6 +97,17 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ProfileActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        ivSetting = (ImageView) mView.findViewById(R.id.iv_setting_home);
+        ivSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+                //
+                //
+                //
             }
         });
 

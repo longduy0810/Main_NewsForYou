@@ -24,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.newsforyou.Fragments.HomeFragment;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -49,6 +51,8 @@ public class ProfileActivity extends AppCompatActivity {
     StorageReference storageReference;
     StorageReference avatarRef;
 
+    DatabaseReference databaseReference;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +67,8 @@ public class ProfileActivity extends AppCompatActivity {
                 Picasso.get().load(uri).into(ivAvatar);
             }
         });
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("user");
 
         initUI();
         initListener();
@@ -162,5 +168,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(ProfileActivity.this, "Lưu thất bại", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void updateProfile() {
+
+    }
+
+    private boolean isNameChange() {
+        return true;
     }
 }

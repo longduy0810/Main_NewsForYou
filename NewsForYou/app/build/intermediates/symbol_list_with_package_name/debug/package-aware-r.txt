@@ -2158,7 +2158,6 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
-id ib_menu_hamburger
 id icon
 id icon_group
 id icon_only
@@ -2183,6 +2182,7 @@ id iv_like_news_item
 id iv_notification_setting
 id iv_report_setting
 id iv_save_setting
+id iv_setting_home
 id iv_text_size_setting
 id iv_view_news_item
 id iv_view_setting
