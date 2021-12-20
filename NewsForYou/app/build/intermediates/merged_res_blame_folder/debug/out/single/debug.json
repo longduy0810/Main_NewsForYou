@@ -76,12 +76,12 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\setting.png"
     },
     {
-        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_comment.png.flat",
@@ -140,6 +140,10 @@
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_report.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\report.png"
+    },
+    {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_no_internet.png.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\no_internet.png"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
         "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_download.png.flat",
+        "source": "D:\\Github\\NewsForYou\\app\\src\\main\\res\\drawable\\download.png"
     },
     {
         "merged": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\merged_res\\debug\\drawable_save.png.flat",

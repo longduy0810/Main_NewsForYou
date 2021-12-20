@@ -21,11 +21,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.newsforyou.Class.User;
 import com.example.newsforyou.Fragments.HomeFragment;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -51,7 +57,7 @@ public class ProfileActivity extends AppCompatActivity {
     StorageReference storageReference;
     StorageReference avatarRef;
 
-    DatabaseReference databaseReference;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,16 +65,15 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         storageReference = FirebaseStorage.getInstance().getReference();
+        initUserInformation();
 
-        avatarRef = storageReference.child("avatar.jpg");
+        avatarRef = storageReference.child(user.getEmail() + ".jpg");
         avatarRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 Picasso.get().load(uri).into(ivAvatar);
             }
         });
-
-        databaseReference = FirebaseDatabase.getInstance().getReference("user");
 
         initUI();
         initListener();
@@ -84,6 +89,8 @@ public class ProfileActivity extends AppCompatActivity {
         edtBirthday = (EditText) findViewById(R.id.edt_birthday);
         btnSave = (Button) findViewById(R.id.btn_save_change);
         btnChangePassword = (Button) findViewById(R.id.btn_change_password);
+
+        showProfile();
     }
 
     @Override
@@ -144,14 +151,14 @@ public class ProfileActivity extends AppCompatActivity {
                     uploadImageToFirebase(imageUri);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
-                    Toast.makeText(ProfileActivity.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ProfileActivity.this, "Lỗi!", Toast.LENGTH_LONG).show();
                 }
             }
         }
     }
 
     private void uploadImageToFirebase(Uri imageUri) {
-        StorageReference fileRef = storageReference.child("avatar.jpg");
+        StorageReference fileRef = storageReference.child(user.getEmail() + ".jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -168,6 +175,22 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(ProfileActivity.this, "Lưu thất bại", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void initUserInformation() {
+        user = FirebaseAuth.getInstance().getCurrentUser();
+    }
+
+    private void showProfile() {
+        if (user == null) {
+            return;
+        }
+
+        String name = user.getDisplayName();
+        String email = user.getEmail();
+
+        edtUsername.setText(name);
+        edtEmail.setText(email);
     }
 
     private void updateProfile() {
