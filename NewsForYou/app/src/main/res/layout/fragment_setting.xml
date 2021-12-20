@@ -8,11 +8,11 @@
     android:backgroundTintMode="add">
 
     <TextView
-        android:id="@+id/tv_setting"
+        android:id="@+id/tv_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Cài đặt"
+        android:text="Tùy chọn"
         android:textAlignment="center"
         android:textColor="@color/dark_blue"
         android:textSize="20sp"
@@ -28,7 +28,7 @@
         android:background="#dbd3d3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_setting" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_option" />
 
 
     <ImageView
@@ -170,7 +170,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_report_setting" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tv_setting_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -182,23 +182,26 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_save_setting" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_name_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:text="UIT"
+        android:textColor="@color/dark_blue"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/iv_avatar_setting"
         app:layout_constraintStart_toEndOf="@+id/iv_avatar_setting"
         app:layout_constraintTop_toTopOf="@+id/iv_avatar_setting" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/iv_notification_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_setting"
         app:srcCompat="@drawable/bell" />
 
     <TextView
@@ -210,18 +213,18 @@
         android:textColor="@color/dark_blue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+        app:layout_constraintBottom_toBottomOf="@+id/iv_notification_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_notification_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_notification_setting" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/iv_text_size_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/iv_notification_setting"
         app:srcCompat="@drawable/text_size" />
 
     <TextView
@@ -233,9 +236,9 @@
         android:textColor="@color/dark_blue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        app:layout_constraintBottom_toBottomOf="@+id/iv_text_size_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_text_size_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_text_size_setting" />
 
     <TextView
         android:id="@+id/tv_logout_setting"
