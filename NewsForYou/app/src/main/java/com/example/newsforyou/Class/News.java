@@ -18,8 +18,7 @@ public class News {
         date = new Date().toString();
     }
 
-    public News(int id, String title, String content, String author,String date) {
-        this.id = id;
+    public News(String title, String content, String author,String date) {
         this.title = title;
         this.content = content;
         this.author = author;

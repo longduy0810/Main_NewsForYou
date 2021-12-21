@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.example.newsforyou.Class.Like;
 import com.example.newsforyou.ProfileActivity;
 import com.example.newsforyou.R;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -34,7 +35,7 @@ public class SettingFragment extends Fragment {
     private ImageView ivDownload;
     private ImageView ivSave;
     private ImageView ivReport;
-    private TextView tvView;
+    private TextView tvHistory;
     private TextView tvDownload;
     private TextView tvSave;
     private TextView tvReport;
@@ -49,6 +50,7 @@ public class SettingFragment extends Fragment {
     StorageReference avatarRef;
 
     private FirebaseUser user;
+    private Like like;
 
     @Nullable
     @Override
@@ -80,12 +82,12 @@ public class SettingFragment extends Fragment {
         tvOption = (TextView) mView.findViewById(R.id.tv_option);
         tvName = (TextView) mView.findViewById(R.id.tv_name_setting);
 
-        tvView = (TextView) mView.findViewById(R.id.tv_view_setting);
+        tvHistory = (TextView) mView.findViewById(R.id.tv_history_setting);
         tvDownload = (TextView) mView.findViewById(R.id.tv_download_setting);
         tvSave = (TextView) mView.findViewById(R.id.tv_save_setting);
         tvReport = (TextView) mView.findViewById(R.id.tv_report_setting);
         ivSave = (ImageView) mView.findViewById(R.id.iv_save_setting);
-        ivView = (ImageView) mView.findViewById(R.id.iv_view_setting);
+        ivView = (ImageView) mView.findViewById(R.id.iv_history_setting);
         ivDownload = (ImageView) mView.findViewById(R.id.iv_download_setting);
         ivReport = (ImageView) mView.findViewById(R.id.iv_report_setting);
 
@@ -107,7 +109,7 @@ public class SettingFragment extends Fragment {
             }
         });
 
-        tvView.setOnClickListener(new View.OnClickListener() {
+        tvHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

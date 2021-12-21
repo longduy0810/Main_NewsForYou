@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <ImageView
-        android:id="@+id/iv_view_setting"
+        android:id="@+id/iv_history_setting"
         android:layout_width="34dp"
         android:layout_height="31dp"
         android:layout_marginBottom="30dp"
@@ -82,7 +82,7 @@
         app:srcCompat="@drawable/download" />
 
     <TextView
-        android:id="@+id/tv_view_setting"
+        android:id="@+id/tv_history_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -90,9 +90,9 @@
         android:textColor="@color/dark_blue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_view_setting"
-        app:layout_constraintStart_toEndOf="@+id/iv_view_setting"
-        app:layout_constraintTop_toTopOf="@+id/iv_view_setting" />
+        app:layout_constraintBottom_toBottomOf="@+id/iv_history_setting"
+        app:layout_constraintStart_toEndOf="@+id/iv_history_setting"
+        app:layout_constraintTop_toTopOf="@+id/iv_history_setting" />
 
     <TextView
         android:id="@+id/tv_download_setting"
@@ -198,8 +198,9 @@
         android:id="@+id/iv_notification_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_setting_setting"
         app:srcCompat="@drawable/bell" />
@@ -213,16 +214,16 @@
         android:textColor="@color/dark_blue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_notification_setting"
         app:layout_constraintStart_toEndOf="@+id/iv_notification_setting"
-        app:layout_constraintTop_toTopOf="@+id/iv_notification_setting" />
+        tools:layout_editor_absoluteY="427dp" />
 
     <ImageView
         android:id="@+id/iv_text_size_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_notification_setting"
         app:srcCompat="@drawable/text_size" />
