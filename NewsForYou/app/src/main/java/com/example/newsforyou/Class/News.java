@@ -29,6 +29,17 @@ public class News {
         this.date = date;
     }
 
+    public News(int id, String title, String content, String author,String date) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
+        this.commentCount = 0;
+        this.reportCount = 0;
+        this.viewCount = 0;
+        this.likeCount = 0;
+        this.date = date;
+    }
+
     public int getId() {
         return id;
     }

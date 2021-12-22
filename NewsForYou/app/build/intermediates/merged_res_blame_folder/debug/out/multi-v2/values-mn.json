@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Github\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
+            "outputFile": "C:\\Users\\longb\\Documents\\GitHub\\Main_NewsForYou\\NewsForYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\longb\\.gradle\\caches\\transforms-3\\6adff63397c1ac50e331d47bdf613af2\\transformed\\jetified-play-services-basement-17.1.0\\res\\values-mn\\values.xml",
